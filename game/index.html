@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phaser demo app</title>
+    <link rel="stylesheet" href="/tether/css/tether.min.css">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/game/style.css">
+    <script>
+      document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+        ':35729/livereload.js?snipver=1"></' + 'script>')
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <nav class="navbar navbar-light navbar-toggleable-sm navbar-inverse bg-inverse">
+            <a class="navbar-brand" href="#">
+                <img src="/assets/sprites/phaser-dude.png" height="30" class="d-inline-block align-top" alt="" style="margin-right: 10px">
+                Anihilate veggies!
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://phaser.io" target="_blank">Learn more</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/serus22/phaser-example" target="_blank">Github</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Buy meat!</a>
+                </li>
+            </ul>
+            </div>
+        </nav>
+
+        <div class="row" id="game_container"></div>
+    </div>
+
+    <script src="/jquery/jquery.min.js"></script>
+    <script src="/tether/js/tether.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/phaser/phaser.js"></script>
+    <script src="/game/main.js"></script>
+</body>
+</html>
