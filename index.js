@@ -4,9 +4,9 @@ const port = 8080;
 const path = require('path');
 const Express = require('express');
 const livereload = require('livereload');
+const opn = require('opn');
 
 let app = new Express();
-
 
 livereload
   .createServer()
@@ -24,6 +24,7 @@ app.get('/', (req, res) => {
   .use('/tether', Express.static(path.join(__dirname + '/node_modules/tether/dist')))
   .listen(port, () => {
     console.log(`Game server running on http://localhost:${port}`);
+    opn(`http://localhost:${port}`);
   });
 
 
